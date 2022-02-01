@@ -15,14 +15,18 @@ const Layout = ({ children, router }) => {
         <Head>
             <meta name='viewport' content='width=device-width, initial-scale=1' />
             <title>CRUD APP</title>
-            <link rel='shortcut icon' href='/public/vercel.svg' />
+            <link rel='shortcut icon' href='/vercel.svg' />
         </Head>
 
-        <>
-        <Navbar path={router.asPath} />
+        <Box
+        p={0}
+        m={0}>
+
+            <Navbar path={router.asPath} />
+
             {children}
 
-        </>
+        </Box>
 
 
         </>
