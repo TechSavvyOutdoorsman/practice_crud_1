@@ -10,17 +10,6 @@ import {
 } from '@chakra-ui/react'
 
 
-const postItem = ({ posts }) => {
-
-
-  return (
-    <Box p={2} background='cyan.400' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
-      <Heading size='md'></Heading>
-    </Box>
-
-  )
-}
-
 
 export default function Home({ posts }) {
 
