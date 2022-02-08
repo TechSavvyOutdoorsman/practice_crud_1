@@ -13,6 +13,12 @@ import {
 
 export default function Home({ posts }) {
 
+
+  const view = (post) => {
+    const data = fetch('http://localhost:3000/api/view/${id}')
+    console.log(data)
+  }
+
   return (
       <Box maxW='container.md' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
         <Container align='center' mb={5} p={2}>
