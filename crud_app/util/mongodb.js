@@ -33,5 +33,9 @@ export async function connectToDatabase() {
   cachedClient = client
   cachedDb = db
 
-  return { client, db }
+  return { 
+    client, 
+    db,
+    // backup-db: client.db('kjljl') 
+  }
 }
