@@ -143,9 +143,11 @@ const Form = ({ formId, postForm, forNewPost = true }) => {
             </form>
 
             <Box>
-                {Object.keys(errors).map((err, index) => (
+                {
+                    Object.keys(errors).map((err, index) => (
                     <li key={index}>{err}</li>
-                ))}
+                    )
+                )}
             </Box>
         </Box>
     )
